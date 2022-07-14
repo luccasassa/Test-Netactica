@@ -1,0 +1,284 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  .estadia-banner {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 42vh;
+    background-image: url(../images/bannerppal.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    h1 {
+      color: $blanco;
+      font-size: 2.2rem;
+      text-shadow: 1px 4px 3px rgba(0, 0, 0, 0.9);
+      text-align: center;
+    }
+  }
+
+  .estadia-form {
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    border-radius: 8px;
+    background-color: $blanco;
+    box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.3);
+
+    .title-form {
+      font-size: 1.1rem;
+      color: $pcolor3;
+      font-weight: bold;
+    }
+
+    form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      gap: 15px;
+      
+      .item-form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 7px;
+
+        label {
+          color: $negro;
+          font-size: 0.8rem;
+        }
+
+        .icon-input {
+          display: flex;
+          align-items: center;
+          gap: 7px;
+
+          border: none;
+          border: 1px solid $pcolor5;
+          border-radius: 5px;
+
+          i {
+            padding-left: 10px;
+            font-size: 0.6rem;
+            color: $pcolor1;
+          }
+
+          input {
+            border: none;
+            border-radius: 0 5px 5px 0;
+            outline: none;
+            padding: 8px;
+            color: $pcolor3;
+            font-family: $fuente;
+            text-transform: capitalize;
+
+            &::placeholder {
+              color: $pcolor4;
+              font-family: $fuente;
+              text-transform: none;
+            }
+          }
+        }
+
+        .input-form {
+          display: flex;
+          flex-direction: row;
+          gap: 7px;
+        }
+      }
+
+      .destino {
+        width: 140px;
+      }
+
+      .fechas {
+        width: 80px;
+      }
+
+      button {
+        font-family: $fuente;
+        font-weight: bold;
+        font-size: 1rem;
+        padding: 8px 20px;
+
+        border: none;
+        border-radius: 5px;
+        color: $blanco;
+        background-color: $pcolor1;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .subtitles {
+    width: 80%;
+    margin: auto;
+
+    h2,
+    span {
+      color: $pcolor3;
+    }
+  }
+
+  .slider-viajes {
+    margin: auto;
+    width: 80%;
+    background-color: $blanco;
+    padding: 10px;
+    border: 1px solid $pcolor5;
+    border-radius: 8px;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 300px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .datos-viaje {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .datos-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .datos-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+    }
+
+    .ida-title {
+      font-size: 0.8rem;
+      color: $pcolor3;
+    }
+
+    .ida-lugar {
+      color: $negro;
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+
+    .ida-precio {
+      color: green;
+      font-weight: bold;
+    }
+  }
+
+  .hoteles {
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+
+    .hotel-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 15px;
+      width: 300px;
+      background-color: $blanco;
+      padding: 10px;
+      border-radius: 10px;
+
+      .hotel-imagen {
+        width: 100%;
+        height: 120px;
+        border-radius: 8px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $blanco;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-shadow: 1px 4px 3px rgba(0, 0, 0, 0.9);
+      }
+
+      .uno {
+        background-image: url(../images/image\ 7.png);
+      }
+
+      .dos {
+        background-image: url(../images/image\ 8.png);
+      }
+
+      .tres {
+        background-image: url(../images/image\ 9.png);
+      }
+
+      .tiempo-estadia {
+        font-size: 0.8rem;
+        color: $pcolor3;
+      }
+
+      .items-datos {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        .hotel-item-datos {
+          display: flex;
+          justify-content: space-between;
+          font-size: 0.9rem;
+          
+          .hotel-lugar {
+            color: $negro;
+            font-weight: bold;
+          }
+
+          .hotel-precio {
+            color: $pcolor1;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

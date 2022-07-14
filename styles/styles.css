@@ -1,0 +1,546 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: #f9f9f8;
+  font-family: "Quicksand", sans-serif;
+}
+
+[id] {
+  scroll-margin-top: 10vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: #000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+*::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  background-color: #fff;
+}
+*::-webkit-scrollbar-thumb {
+  background: #4a8ef5;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  pointer-events: none;
+}
+
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  z-index: 9;
+}
+nav .nav-branding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+.nav-menu-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1.6rem;
+  z-index: 0;
+}
+.nav-menu-list .nav-item {
+  display: flex;
+  align-items: center;
+  color: #464646;
+}
+.nav-menu-list .nav-item:first-child {
+  font-weight: bold;
+}
+.nav-menu-list .nav-item:first-child:hover {
+  font-weight: normal;
+}
+.nav-menu-list .nav-item:hover {
+  font-weight: bold;
+}
+.nav-menu-list .nav-item i {
+  color: #4a8ef5;
+  font-size: 0.8rem;
+  padding-right: 7px;
+}
+
+.hamburger {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+main .estadia-banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 42vh;
+  background-image: url(../images/bannerppal.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main .estadia-banner h1 {
+  color: #fff;
+  font-size: 2.2rem;
+  text-shadow: 1px 4px 3px rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+main .estadia-form {
+  width: 60%;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.3);
+}
+main .estadia-form .title-form {
+  font-size: 1.1rem;
+  color: #464646;
+  font-weight: bold;
+}
+main .estadia-form form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+}
+main .estadia-form form .item-form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+main .estadia-form form .item-form label {
+  color: #000;
+  font-size: 0.8rem;
+}
+main .estadia-form form .item-form .icon-input {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  border: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+}
+main .estadia-form form .item-form .icon-input i {
+  padding-left: 10px;
+  font-size: 0.6rem;
+  color: #4a8ef5;
+}
+main .estadia-form form .item-form .icon-input input {
+  border: none;
+  border-radius: 0 5px 5px 0;
+  outline: none;
+  padding: 8px;
+  color: #464646;
+  font-family: "Quicksand", sans-serif;
+  text-transform: capitalize;
+}
+main .estadia-form form .item-form .icon-input input::-moz-placeholder {
+  color: #9faab7;
+  font-family: "Quicksand", sans-serif;
+  text-transform: none;
+}
+main .estadia-form form .item-form .icon-input input:-ms-input-placeholder {
+  color: #9faab7;
+  font-family: "Quicksand", sans-serif;
+  text-transform: none;
+}
+main .estadia-form form .item-form .icon-input input::placeholder {
+  color: #9faab7;
+  font-family: "Quicksand", sans-serif;
+  text-transform: none;
+}
+main .estadia-form form .item-form .input-form {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+}
+main .estadia-form form .destino {
+  width: 140px;
+}
+main .estadia-form form .fechas {
+  width: 80px;
+}
+main .estadia-form form button {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #4a8ef5;
+  cursor: pointer;
+}
+main .subtitles {
+  width: 80%;
+  margin: auto;
+}
+main .subtitles h2,
+main .subtitles span {
+  color: #464646;
+}
+main .slider-viajes {
+  margin: auto;
+  width: 80%;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+}
+main .swiper {
+  width: 100%;
+  height: 100%;
+}
+main .swiper-slide {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+main .swiper-slide img {
+  display: block;
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .datos-viaje {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+main .datos-viaje .datos-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+main .datos-viaje .datos-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+main .datos-viaje .ida-title {
+  font-size: 0.8rem;
+  color: #464646;
+}
+main .datos-viaje .ida-lugar {
+  color: #000;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+main .datos-viaje .ida-precio {
+  color: green;
+  font-weight: bold;
+}
+main .hoteles {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+main .hoteles .hotel-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 15px;
+  width: 300px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+main .hoteles .hotel-item .hotel-imagen {
+  width: 100%;
+  height: 120px;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-shadow: 1px 4px 3px rgba(0, 0, 0, 0.9);
+}
+main .hoteles .hotel-item .uno {
+  background-image: url(../images/image\ 7.png);
+}
+main .hoteles .hotel-item .dos {
+  background-image: url(../images/image\ 8.png);
+}
+main .hoteles .hotel-item .tres {
+  background-image: url(../images/image\ 9.png);
+}
+main .hoteles .hotel-item .tiempo-estadia {
+  font-size: 0.8rem;
+  color: #464646;
+}
+main .hoteles .hotel-item .items-datos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+main .hoteles .hotel-item .items-datos .hotel-item-datos {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+main .hoteles .hotel-item .items-datos .hotel-item-datos .hotel-lugar {
+  color: #000;
+  font-weight: bold;
+}
+main .hoteles .hotel-item .items-datos .hotel-item-datos .hotel-precio {
+  color: #4a8ef5;
+  font-weight: bold;
+}
+
+footer {
+  border-top: 1px solid #ddd;
+  padding: 5vh 0;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+}
+footer .footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer .footer-left span {
+  color: #9faab7;
+}
+footer .footer-left span:first-child {
+  color: #464646;
+  font-weight: bold;
+  padding-bottom: 1px;
+}
+footer .footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+}
+footer .footer-right .social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+footer .footer-right .social span {
+  color: #464646;
+  font-weight: bold;
+}
+footer .footer-right .social .media {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+footer .footer-right .social .media i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #4a8ef5;
+  padding: 5px;
+  border-radius: 50%;
+}
+footer .footer-right .social .media i:hover {
+  background-color: #464646;
+}
+footer .footer-right img {
+  width: 130px;
+}
+footer .footer-right .condiciones {
+  color: #9faab7;
+}
+
+@media (max-width: 800px) {
+  /* _______________NAVBAR_______________ */
+  nav {
+    justify-content: space-between;
+  }
+  .nav-branding {
+    padding-left: 2rem;
+  }
+  .nav-branding img {
+    width: 12rem;
+  }
+  /* oculta */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100vh;
+    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    transition: 0.5s ease;
+  }
+  /* visible */
+  .nav-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s ease;
+  }
+  .nav-menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+  .nav-menu-list .nav-item .nav-link {
+    font-size: 1.2rem;
+  }
+  .hamburger {
+    display: block;
+    padding-right: 2rem;
+    z-index: 11;
+    cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    transform: translateX(16px);
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    width: 25px;
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #464646;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  .bar:nth-child(2),
+.bar:nth-child(3) {
+    width: 15px;
+    margin-right: 0;
+  }
+  /* _______________MAIN_______________ */
+  main .estadia-banner h1 {
+    font-size: 1.5rem;
+  }
+  main .estadia-form {
+    width: 70%;
+  }
+  main .estadia-form .title-form {
+    text-align: center;
+  }
+  main .estadia-form form .item-form .icon-input input::-moz-placeholder {
+    font-size: 0.7rem;
+  }
+  main .estadia-form form .item-form .icon-input input:-ms-input-placeholder {
+    font-size: 0.7rem;
+  }
+  main .estadia-form form .item-form .icon-input input::placeholder {
+    font-size: 0.7rem;
+  }
+  main .estadia-form form .fechas {
+    width: 60px;
+  }
+  main .subtitles {
+    text-align: center;
+  }
+  main .hoteles {
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+  }
+  main .hoteles .hotel-item {
+    width: 270px;
+    margin: auto;
+  }
+  /* _______________FOOTER_______________ */
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  footer .footer-left {
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer-left span {
+    font-size: 0.8rem;
+  }
+  footer .footer-right {
+    align-items: center;
+  }
+  footer .footer-right .social span {
+    font-size: 0.8rem;
+  }
+  footer .footer-right .social .media i {
+    width: 1rem;
+    height: 1rem;
+    font-size: 1rem;
+  }
+  footer .footer-right .condiciones {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=styles.css.map */

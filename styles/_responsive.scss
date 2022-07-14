@@ -1,0 +1,186 @@
+@media (max-width: 800px) {
+
+  /* _______________NAVBAR_______________ */
+
+  nav {
+    justify-content: space-between;
+  }
+  
+  .nav-branding {
+    padding-left: 2rem;
+
+    img {
+      width: 12rem;
+    }
+  }
+  
+  /* oculta */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    
+    width: 100%;
+    height: 100vh;
+    padding-right: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $blanco;
+    transition: 0.5s ease;
+  }
+
+  /* visible */
+  .nav-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s ease;
+  }
+
+  .nav-menu-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    .nav-item {
+      .nav-link {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  .hamburger {
+    display: block;
+    padding-right: 2rem;
+    z-index: 11;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    transform: translateX(16px);
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    width: 25px;
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+
+    background-color: $pcolor3;
+    border-radius: 5px;
+
+    transition: all 0.3s ease-in-out;
+  }
+
+  .bar:nth-child(2),
+  .bar:nth-child(3) {
+    width: 15px;
+    margin-right: 0;
+  }
+
+  /* _______________MAIN_______________ */
+
+  main {
+    .estadia-banner {
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+
+    .estadia-form {
+      width: 70%;
+
+      .title-form {
+        text-align: center;
+      }
+
+      form {
+        .item-form {
+          .icon-input {
+            input {
+              &::placeholder {
+                font-size: 0.7rem;
+              }
+            }
+          }
+        }
+
+        .fechas {
+          width: 60px;
+        }
+      }
+    }
+
+    .subtitles {
+      text-align: center;
+    }
+
+    .hoteles {
+      flex-direction: column;
+      width: 90%;
+      margin: auto;
+
+      .hotel-item {
+        width: 270px;
+        margin: auto;
+      }
+    }
+  }
+
+  /* _______________FOOTER_______________ */
+  
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    .footer-left {
+      justify-content: center;
+      align-items: center;
+
+      span {
+        font-size: 0.8rem;
+      }
+    }
+
+    .footer-right {
+      align-items: center;
+
+      .social {
+        span {
+          font-size: 0.8rem;
+        }
+
+        .media {
+          i {
+            width: 1rem;
+            height: 1rem;
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .condiciones {
+        font-size: 0.8rem;
+      }
+    }
+  }
+}

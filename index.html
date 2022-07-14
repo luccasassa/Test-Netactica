@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <meta name="author" content="luccaomg5@gmail.com" />
+    <meta name="description" content="Landing page Netactica test" />
+    <meta
+      name="keywords"
+      content="netactica, travel, viaje, turismo, hotel, destino, nacional, europa, internacionales, argentina, caba, ciudad de la paz, oferta"
+    />
+    <meta name="copyright" content="Luca Sassaroli" />
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- TITLE -->
+    <title>LUCA SASSAROLI</title>
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+
+    <nav>
+      <a href="#" class="nav-branding">
+        <img src="./images/logo.png" class="logo" alt="logo" />
+      </a>
+
+      <div class="nav-menu">
+        <ul class="nav-menu-list">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Mis Reservas</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fa-solid fa-phone"></i>(54)11 4964-1900</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link"
+              ><i class="fa-solid fa-envelope"></i>soporte@agencia.com</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <!-- MAIN -->
+
+    <main>
+      <div class="estadia-banner">
+        <h1>Tu proximo viaje comienza aqui</h1>
+      </div>
+
+      <div class="estadia-form">
+        <span class="title-form">Miles de hoteles para tu próxima estadia</span>
+
+        <form>
+          <div class="item-form">
+            <label>Destino:</label>
+            <label class="icon-input">
+              <i class="fa-solid fa-location-dot"></i>
+              <input
+                type="text"
+                placeholder="Ingrese un destino"
+                class="destino"
+              />
+            </label>
+          </div>
+
+          <div class="item-form">
+            <label>Fechas:</label>
+            <div class="input-form">
+              <label class="icon-input">
+                <i class="fa-solid fa-calendar-days"></i>
+                <input type="text" placeholder="Check in" class="fechas" />
+              </label>
+              <label class="icon-input">
+                <i class="fa-solid fa-calendar-days"></i>
+                <input type="text" placeholder="Check out" class="fechas" />
+              </label>
+            </div>
+          </div>
+
+          <div class="item-form">
+            <label>Habitaciones:</label>
+            <div class="input-form">
+              <label class="icon-input">
+                <i class="fa-solid fa-user"></i>
+                <input
+                  type="number"
+                  min="1"
+                  max="5"
+                  value="2"
+                  class="habitaciones"
+                />
+              </label>
+              <label class="icon-input">
+                <i class="fa-solid fa-bed"></i>
+                <input
+                  type="number"
+                  min="1"
+                  max="5"
+                  value="1"
+                  class="habitaciones"
+                />
+              </label>
+            </div>
+          </div>
+
+          <button type="submit">Buscar</button>
+        </form>
+      </div>
+
+      <div class="subtitles">
+        <h2>¡Escapate por Argentina y pagá en 6 cuotas sin interés!💳</h2>
+        <span>Los precios incluyen Impto. PAIS Y Percep. RG4815</span>
+      </div>
+
+      <div class="slider-viajes">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./images/image 4.png" alt="foto lugar viaje" />
+
+                <div class="datos-viaje">
+                  <div class="datos-left">
+                    <span class="ida-title">Ida/Vuelta desde BUE</span>
+                    <span class="ida-lugar">Bariloche</span>
+                  </div>
+
+                  <div class="datos-right">
+                    <span class="ida-title">Precio desde</span>
+                    <span class="ida-precio">$24.511 ARS</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./images/image 5.png" alt="foto lugar viaje" />
+
+                <div class="datos-viaje">
+                  <div class="datos-left">
+                    <span class="ida-title">Ida/Vuelta desde BUE</span>
+                    <span class="ida-lugar">Bariloche</span>
+                  </div>
+
+                  <div class="datos-right">
+                    <span class="ida-title">Precio desde</span>
+                    <span class="ida-precio">$24.511 ARS</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./images/image 6.png" alt="foto lugar viaje" />
+
+                <div class="datos-viaje">
+                  <div class="datos-left">
+                    <span class="ida-title">Ida/Vuelta desde BUE</span>
+                    <span class="ida-lugar">Bariloche</span>
+                  </div>
+
+                  <div class="datos-right">
+                    <span class="ida-title">Precio desde</span>
+                    <span class="ida-precio">$24.511 ARS</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./images/image 7.png" alt="foto lugar viaje" />
+
+                <div class="datos-viaje">
+                  <div class="datos-left">
+                    <span class="ida-title">Ida/Vuelta desde BUE</span>
+                    <span class="ida-lugar">Bariloche</span>
+                  </div>
+
+                  <div class="datos-right">
+                    <span class="ida-title">Precio desde</span>
+                    <span class="ida-precio">$24.511 ARS</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./images/image 8.png" alt="foto lugar viaje" />
+
+                <div class="datos-viaje">
+                  <div class="datos-left">
+                    <span class="ida-title">Ida/Vuelta desde BUE</span>
+                    <span class="ida-lugar">Bariloche</span>
+                  </div>
+
+                  <div class="datos-right">
+                    <span class="ida-title">Precio desde</span>
+                    <span class="ida-precio">$24.511 ARS</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a href="#">
+                <img src="./images/image 9.png" alt="foto lugar viaje" />
+
+                <div class="datos-viaje">
+                  <div class="datos-left">
+                    <span class="ida-title">Ida/Vuelta desde BUE</span>
+                    <span class="ida-lugar">Bariloche</span>
+                  </div>
+
+                  <div class="datos-right">
+                    <span class="ida-title">Precio desde</span>
+                    <span class="ida-precio">$24.511 ARS</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- <div class="swiper-pagination"></div> -->
+          <div class="swiper-button-next" style="color: #000"></div>
+          <div class="swiper-button-prev" style="color: #000"></div>
+        </div>
+      </div>
+
+      <div class="subtitles">
+        <h2>Hoteles en oferta!🌊</h2>
+      </div>
+
+      <div class="hoteles">
+        <div class="hotel-item">
+          <div class="hotel-imagen uno">Hoteles en Brasil</div>
+
+          <span class="tiempo-estadia">Precio por noche, base doble</span>
+
+          <div class="items-datos">
+            <a href="#" class="hotel-item-datos">
+              <span class="hotel-lugar">Rio de Janeiro ⭐⭐⭐</span>
+              <span class="hotel-precio">$24.511 ARS</span>
+            </a>
+            <hr />
+            <a href="#" class="hotel-item-datos">
+              <span class="hotel-lugar">Sao Paulo ⭐⭐⭐</span>
+              <span class="hotel-precio">$12.369 ARS</span>
+            </a>
+            <hr />
+            <a href="#" class="hotel-item-datos">
+              <span class="hotel-lugar">Natal ⭐⭐⭐⭐</span>
+              <span class="hotel-precio">$24.511 ARS</span>
+            </a>
+            <hr />
+            <a href="#" class="hotel-item-datos">
+              <span class="hotel-lugar">Florianopolis ⭐⭐</span>
+              <span class="hotel-precio">$6.000 ARS</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hotel-item">
+          <div class="hotel-imagen dos">Hoteles Nacionales</div>
+
+          <span class="tiempo-estadia">Precio por noche, base doble</span>
+
+          <div class="items-datos">
+            <a href="#" class="hotel-item-datos">
+              <span class="hotel-lugar">Rio de Janeiro ⭐⭐⭐</span>
+              <span class="hotel-precio">$24.511 ARS</span>
+            </a>
+            <hr />
+            <a href="#" class="hotel-item-datos">
+              <span class="hotel-lugar">Sao Paulo ⭐⭐⭐</span>
+              <span class="hotel-precio">$12.369 ARS</span>
+            </a>
+            <hr />
+            <a href="#" class="hotel-item-datos">
+              <span class="hotel-lugar">Natal ⭐⭐⭐⭐</span>
+              <span class="hotel-precio">$24.511 ARS</span>
+            </a>
+            <hr />
+            <a href="#" class="hotel-item-datos">
+              <span class="hotel-lugar">Florianopolis ⭐⭐</span>
+              <span class="hotel-precio">$6.000 ARS</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hotel-item">
+          <div class="hotel-imagen tres">Hoteles en Europa</div>
+
+          <span class="tiempo-estadia">Precio por noche, base doble</span>
+
+          <div class="items-datos">
+            <a href="#" class="hotel-item-datos">
+              <span class="hotel-lugar">Rio de Janeiro ⭐⭐⭐</span>
+              <span class="hotel-precio">$24.511 ARS</span>
+            </a>
+            <hr />
+            <a href="#" class="hotel-item-datos">
+              <span class="hotel-lugar">Sao Paulo ⭐⭐⭐</span>
+              <span class="hotel-precio">$12.369 ARS</span>
+            </a>
+            <hr />
+            <a href="#" class="hotel-item-datos">
+              <span class="hotel-lugar">Natal ⭐⭐⭐⭐</span>
+              <span class="hotel-precio">$24.511 ARS</span>
+            </a>
+            <hr />
+            <a href="#" class="hotel-item-datos">
+              <span class="hotel-lugar">Florianopolis ⭐⭐</span>
+              <span class="hotel-precio">$6.000 ARS</span>
+            </a>
+          </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="footer-left">
+        <span>Netactica S. A</span>
+        <span>Ciudad de la Paz 353, C1426 CABA</span>
+        <span>CEDASTUR: 00.000.10.0001-9 | CNPJ: 00.000.000/0001-46</span>
+        <span>Emergencias durante el viaje: +54 (11) 4964-19000</span>
+        <span>E-mail: contacto@netactica.com</span>
+      </div>
+
+      <div class="footer-right">
+        <div class="social">
+          <span>Siguenos: </span>
+          <div class="media">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <img src="./images/logo net.png" alt="logo netactica" />
+
+        <span class="condiciones"
+          >Términos y condiciones | Políticas de privacidad</span
+        >
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/hamburger.js"></script>
+    <script src="./js/swiper.js"></script>
+  </body>
+</html>
